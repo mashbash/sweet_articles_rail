@@ -1,0 +1,13 @@
+<article>
+  <h1><%= @article.category.name %></h1>
+  <h3><%= @article.title %></h3>
+  <% if @article.tags %>
+    <ul>
+      <% @article.tags.each do |tag| %>
+        <li><%= link_to tag.name, tag_path(tag.name) %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <hr/>
+  <p><%= @article.content %></p>
+</article>

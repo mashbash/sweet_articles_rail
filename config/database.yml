@@ -1,0 +1,12 @@
+development:
+  adapter: postgresql
+  database: sweet_articles_rail_dev
+
+test:
+  adapter: postgresql
+  database: sweet_articles_rail_test
+  
+production:
+  adapter: postgresql
+  database: sweet_articles_rail
+  
